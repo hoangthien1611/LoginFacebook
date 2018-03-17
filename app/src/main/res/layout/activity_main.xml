@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nht.hoangthien.loginfacebook.MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_above="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_facebook" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:paddingLeft="10dp"
+            android:hint="@string/hint_email_phone"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <EditText
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:hint="@string/hint_pass"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:text="@string/text_login"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sign_up"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
